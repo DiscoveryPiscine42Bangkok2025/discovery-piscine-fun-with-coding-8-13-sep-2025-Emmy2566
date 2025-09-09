@@ -1,0 +1,28 @@
+
+    body{
+        margin: 0;
+    }
+    .z{
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        border: 2px solid black;
+
+    }
+
+    .a{
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        width: 50%;
+        height: 100vh;
+        background-color: green;
+    }
+    .b{
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        width: 50%;
+        height: 100vh;
+        background-color: coral;
+    }
