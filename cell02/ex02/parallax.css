@@ -1,0 +1,37 @@
+body, html{
+    margin: 0;
+    height: 100vh;
+}
+.parallax {
+
+  background-image: url('a.jpg');
+  height: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:  150px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax2 {
+
+  background-image: url('b.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text{
+    width: 100vw;
+    height: 50%;
+    background-color: rgba(71, 133, 204, 0.416);
+    font-size: 30px;
+}
