@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFF1D5;
+}
+a{
+    font-family: "Comic Relief", system-ui;
+    text-decoration: none;
+    color: white;
+}
+.box_1{
+    font-family: "Comic Relief", system-ui;
+    font-size: 2.2vw;
+    padding: 16px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.box_2{
+    font-family: "Comic Relief", system-ui, monospace;
+    font-size: 1.8vw;
+    padding: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    width: 20%;
+    padding: 15px;
+    flex-direction: column;
+    gap: 10px;
+
+}
+@media screen and (min-width: 700px){
+    .btns{
+        flex-direction: row;
+    }
+
+}
+@media screen and (max-width: 700px){
+    /* .btns{
+        flex-direction: row;
+    } */
+ 
+    .box_1{
+        font-size: 30px;
+    }
+    .box_2{
+        font-size: 25px;
+    }
+    a{
+        font-size: 25px;
+    }  
+    .btns{
+        width: 400px;
+    }
+}
+.btn01{
+    border: solid;
+    border-color: black;
+    border-radius: 15px;
+    background-color: black;
+    width: 40%;
+    font-family: "Comic Relief", system-ui;
+    font-size: 1.2vw;
+}
+.btn02{
+    border: solid;
+    border-color: #9FB3DF;
+    border-radius: 15px;
+    background-color: #9FB3DF;
+    width: 40%;
+    font-family: "Comic Relief", system-ui;
+    font-size: 1.2vw;
+}
+.btn01:hover {
+    background-color: gainsboro;
+    border-color: gainsboro;
+    width: 45%;
+    scale: 1.05;
+    a{
+        color: red;
+    }
+  }
+  .btn02:hover {
+    background-color: #9EC6F3;
+    border-color: #9EC6F3;
+    width: 45%;
+    scale: 1.05;
+    a{
+        color: black;
+    }
+  }
