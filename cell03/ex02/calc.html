@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="input">
+        <label for="num1">First number:</label>
+        <input type="number" id="num1" "><br><br>
+        <select name="oper" id="oper">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+        </select>
+        <p></p>
+        <label for="num2">Second number:</label>
+        <input type="number" id="num2" "><br><br>
+    </div>
+    <div class="box">
+        <input type="submit" value="Try me" class="sub" onclick="cal()">
+    </div>
+    <script src=" cal.js"></script>
+</body>
+
+</html>
