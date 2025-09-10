@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+body {
+    margin: 0;
+    height: 100vh;
+    width: 99vw;
+    background-color: rgb(255, 188, 221);
+}
+h1{
+    font-family: "Comic Relief", monospace;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #e79ae3;
+    width: 99vw;
+    position: fixed;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: "Comic Relief", monospace;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+.pic{
+    width: 40%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic img{
+    width: 100%;
+    height: 60vh;
+         border: solid rgb(255, 0, 128) 5px;
+    border-radius: 30%;
+}
+.About{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.masg_1{
+    font-family: "Comic Relief", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+}
+.Exps{
+    padding: 3%;
+    height: 100vh;
+    text-align: center;
+}
+.cons{
+    font-family: "Comic Relief", monospace;
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
