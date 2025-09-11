@@ -1,9 +1,7 @@
 let list =document.getElementById("ft_list")
 const todos =[]
 let x = 0
-const lists = decodeURIComponent(document.cookie).split(",")
-
-// console.log(lists)
+const lists = atob(document.cookie).split(",")
 const result = lists.filter(function s(word){
    return word != ""
 })
@@ -30,21 +28,22 @@ function new_list(){
     let task_p = list.innerHTML
     list.innerHTML = `<div class=mini onclick=Del(id) id=${x}>`+task+"</div>"+task_p
     result[x++] = task
-    // console.log(x)
-    console.log(result)
-    document.cookie = encodeURIComponent(result)
+
+    document.cookie = btoa(result)
 
     let file = document.cookie
-    console.log(file)
+    console.log("this :"+file)
     // btn.style.display = "block"
 }
 
 function Del(num){
-    // console.log("this"+num)
     if(confirm("Do you want to delete it ???")){
         let a = document.getElementById(`${num}`)
+        console.log(num)
         a.remove()
         result[num]=null
-        document.cookie = encodeURIComponent(result)
+        
+        document.cookie = btoa(result)
+        console.log(document.cookie)
     }
 } 
