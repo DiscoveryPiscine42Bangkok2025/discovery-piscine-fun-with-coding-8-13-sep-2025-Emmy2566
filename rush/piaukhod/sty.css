@@ -91,6 +91,13 @@ h1{
     height: 100vh;
     text-align: center;
 }
+.a{
+    font-size: 25px;
+    background-color: #ecc0e9;
+    border-radius: 25%;
+    border: solid black 2px;
+    width: 10vw;
+}
 .Exps{
     padding: 3%;
     height: 100vh;
@@ -102,4 +109,24 @@ h1{
     height: 50vh;
     justify-content: center;
     align-items: center;
+}
+.Box_exp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 80vh;
+    gap: 50px;
+}
+.img_2{
+    border-radius: 25%;
+    border:solid rgb(255, 0, 128) 3px;
+}
+.Box_img02{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height:80vh ;
 }
